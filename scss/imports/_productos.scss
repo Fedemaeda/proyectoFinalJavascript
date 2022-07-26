@@ -1,0 +1,71 @@
+@mixin productostext ($color, $style){
+    color:$color;
+     style:$style;
+ }
+
+
+
+.contenedor-tarjetas {
+     display: flex;
+     flex-wrap: wrap;
+     row-gap: 50px;
+     column-gap: 50px;
+     margin-top: 50px;
+     justify-content: center;
+     
+ }
+
+  .tarjeta {
+     display: grid;
+     height: 20rem;
+     border-radius: 10px;
+     background-color: $color6; 
+     border: 2px solid #8888;
+    
+   p{
+     @include productostext (black,italic);
+     justify-content: center;
+     text-align: center;
+     margin-top: 50px;
+     }
+     &:hover{
+         animation: miel 3s;
+         transform: scale(1.06);     
+      
+     }
+   } 
+ 
+  .tarjeta img{
+     border-radius: 10px 
+  }
+
+
+ .tarjeta {
+     width: 120px;
+     border: 1px solid grey;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+     margin: 10px;
+ }
+
+.img-container {
+     width: 120px;
+     height: 50%;
+     padding: 10px;
+ }
+
+
+  
+
+@keyframes miel{
+     
+    25%{
+        transform: scale(1.10);
+        
+    }
+    
+}
+

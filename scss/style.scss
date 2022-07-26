@@ -1,0 +1,271 @@
+$color2: #fe5864;
+$color1: rgb(99,164,106);
+$color3: black;
+$color4:white;
+$color5:rgb(245, 215, 215);
+$color6:#e5e9f2;
+$font: verdana;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "./imports/header";
+@import "./imports/productos";
+@import "./imports/nosotras";
+@import "./imports/footer";
+
+*{
+   padding: 0;
+   margin: 0; 
+}
+
+
+
+
+body{
+    background-color: $color4;
+    font-family: $font;
+    
+   
+    
+      
+}
+main{
+   background-color: $color6;
+}
+
+nav{
+   background: rgb(99,164,106);
+   background: linear-gradient(90deg, rgba(99,164,106,1) 51%, rgba(158,233,148,1) 100%);
+}   
+
+
+
+.banner{ 
+   display: flex;
+   padding: 10px;
+   justify-content: center;
+   h5{
+   font-family: $font;
+   color: $color1;
+  text-align: center;
+  margin-top: 5px;
+}
+}
+
+
+
+
+
+
+.container-fluid img{
+    max-height: 100px;
+}
+
+
+
+
+
+
+
+ 
+.principal{
+    top: 300px;
+    margin-top: 50px;
+    text-align: center;
+    color: $color1;
+    
+    
+}
+
+
+
+
+
+.video iframe{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-content: center;
+
+}
+ 
+
+
+
+
+
+.parrafo{
+   
+   color: $color1;
+   
+    
+}
+
+
+.col-6 h4{
+    @extend.parrafo;
+        
+}
+
+
+ 
+ 
+  
+h1{
+    color: $color1;
+    font-weight: bolder;
+    margin-bottom: 10px;
+   
+}
+
+
+
+
+
+
+
+.form{
+   padding: 50px; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: $color6;
+    border-radius: 10px;
+   border-radius: 10px;
+   p{
+      color: $color1;
+   }
+}
+
+$formulario:(
+   primary: blue,
+
+
+);
+
+@each $boton, $color in $formulario {
+   .btn-#{$boton}{
+      background-color: $color;
+   }
+   
+};
+
+
+
+
+
+
+.mapa{
+
+   overflow:hidden;
+
+   padding-bottom:56.25%;
+
+   position:relative;
+
+   height:0;
+
+   border-radius: 10px;
+ 
+ 
+   iframe{
+
+   left:0;
+
+   top:0;
+
+   height:100%;
+
+   width:100%;
+
+   position:absolute;
+ }
+}
+
+
+
+.carousel{
+   width: 50%;
+   margin: auto;
+   
+   
+}
+
+
+
+.carousel-inner {
+   
+   
+
+   
+   
+   align-content: center;
+   h4{ 
+      color: $color1;
+   }
+   .carousel-item{
+      img{
+      width: 45%;
+      height: 35%;
+      
+   }
+}
+}
+
+@media screen and (max-width: 769px) {
+ 
+    
+   .navbar-nav{
+      
+      font-size: x-small;
+  }  
+
+
+
+   .video iframe{
+    width: auto; 
+    height: auto;
+   }
+
+
+   
+   
+   
+   .nosotras-contenido{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px; 
+      margin-top:50px;
+      margin-bottom: 50px;
+      font-size:xx-small;
+      background-color: $color6;
+      
+      .col-6{
+      
+         h4{
+            font-size: 15px;
+            text-align: center;
+         }
+      }
+      img {
+       width: 100%;
+       height: auto;
+       margin-bottom: 20px;
+      } 
+     
+     
+   }
+
+   .footer-about .footer-logo img{
+      width: 30%;
+      
+   }
+
+
+   .banner{ 
+      h5{
+   font-size:small;
+      
+   }
+}
+
+}   
+
