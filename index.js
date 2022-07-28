@@ -19,7 +19,11 @@ console.log(tarjetasHtml)
 
 const contenedorTarjetas = document.querySelector(".contenedor-tarjetas")
 
-console.log(contenedorTarjetas)
+
 
 contenedorTarjetas.innerHTML = tarjetasHtml
+
+
+
+
 
