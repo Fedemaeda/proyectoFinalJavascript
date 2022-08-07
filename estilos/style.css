@@ -39,7 +39,6 @@
 .tarjeta {
   display: -ms-grid;
   display: grid;
-  height: 20rem;
   border-radius: 10px;
   background-color: #e5e9f2;
   border: 2px solid #8888;
@@ -47,7 +46,7 @@
 
 .tarjeta p {
   color: black;
-  
+  style: italic;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -68,6 +67,7 @@
 
 .tarjeta {
   width: 120px;
+  height: 400px;
   border: 1px solid grey;
   border-radius: 10px;
   display: -webkit-box;
@@ -85,7 +85,7 @@
 
 .img-container {
   width: 120px;
-  height: 50%;
+  height: 150px;
   padding: 10px;
 }
 

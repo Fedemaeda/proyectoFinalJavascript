@@ -8,10 +8,14 @@ const tarjetasHtml = PRODUCTOS.productos.reduce((acc, elemento, i) => {
                     <img src=${elemento.img} alt=${elemento.name}>
                 </div>   
                 <p>
-                    ${elemento.name}
-                </p> 
+                    ${elemento.name} 
                    
+                </p> 
+                $ ${elemento.price}
+                
+                
             </div>
+            
         `       
 },"")
 
@@ -22,8 +26,4 @@ const contenedorTarjetas = document.querySelector(".contenedor-tarjetas")
 
 
 contenedorTarjetas.innerHTML = tarjetasHtml
-
-
-
-
 

@@ -9,27 +9,24 @@ const inputMensaje = document.querySelector("#mensaje")
 console.log(formulario, inputNombres, inputEmail, inputMensaje)
 
 
-let clientes = []
+const clientes = []
+ class cliente {
+     constructor(nombre, email, mensaje){
+         this.nombre = nombre;
+         this.email = email;
+         this.mensaje = mensaje;
+         
+     }
+ }
 
-const pushearNombre = (array, valor) => {
-    array.push(valor)    
+
+
+
+
+ const convertirAJSONYSubirAlLS = (clave, valor) => {
+    const arrayAJSON = JSON.stringify(valor)
+   localStorage.setItem(clave, arrayAJSON)
 }
-
-const pushearEmail = (array, valor) => {
-    array.push(valor)    
-}
-
-const pushearMensaje = (array, valor) => {
-    array.push(valor)    
-}
-
-
-
-// para entrega siguiente
-// const convertirAJSONYSubirAlLS = (clave, valor) => {
-//     const arrayAJSON = JSON.stringify(valor)
-//     localStorage.setItem(clave, arrayAJSON)
-// }
 
 
 
@@ -37,13 +34,9 @@ const pushearMensaje = (array, valor) => {
 
 formulario.onsubmit = (event) => {
     event.preventDefault()
-    pushearNombre(clientes, inputNombres.value) 
-    pushearEmail(clientes, inputEmail.value)
-    pushearMensaje(clientes, inputMensaje.value)
-
+    clientes.push(new cliente(inputNombres.value, inputEmail.value, inputMensaje.value))
     formulario.reset() 
-     
-    //convertirAJSONYSubirAlLS("clientes", clientes) 
+    convertirAJSONYSubirAlLS("clientes", clientes) 
     console.log(clientes)
 }
 
