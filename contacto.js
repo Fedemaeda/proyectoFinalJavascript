@@ -35,6 +35,7 @@ const clientes = []
 formulario.onsubmit = (event) => {
     event.preventDefault()
     clientes.push(new cliente(inputNombres.value, inputEmail.value, inputMensaje.value))
+    swal("Formulario enviado con éxito","nos contactaremos a la brevedad");
     formulario.reset() 
     convertirAJSONYSubirAlLS("clientes", clientes) 
     console.log(clientes)
