@@ -122,12 +122,13 @@ h1{
 
 
 .form{
-   padding: 50px; 
+   padding: auto; 
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: $color6;
     border-radius: 10px;
    border-radius: 10px;
+   
    p{
       color: $color1;
    }

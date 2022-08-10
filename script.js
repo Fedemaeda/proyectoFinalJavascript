@@ -1,32 +1,4 @@
 
-
-// const tarjetasHtml = PRODUCTOS.productos.reduce((acc, elemento, i) => {   
-
-//         return acc = acc + `    
-//             <div class="tarjeta">
-//                 <div class="img-container">
-//                     <img src=${elemento.img} alt=${elemento.name}>
-//                 </div>   
-//                 <p>
-//                     ${elemento.name} 
-                   
-//                 </p> 
-//                 $ ${elemento.price}
-                
-                
-//             </div>
-            
-//         `       
-// },"")
-
-// console.log(tarjetasHtml)
-
-// const contenedorTarjetas = document.querySelector(".contenedor-tarjetas")
-
-
-
-// contenedorTarjetas.innerHTML = tarjetasHtml
-
 let productosDiv = document.getElementById("productos")
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || []
@@ -63,8 +35,8 @@ function agregarAlCarrito(e) {
 
     //storage
     localStorage.setItem("carrito", JSON.stringify(carrito));
-
-    alert("Agregaste " + productoSeleccionado.name + " al carrito")
+    swal("Agregaste " + productoSeleccionado.name + " al carrito")
+    
 
     mostrarCarrito()
 }
@@ -91,7 +63,7 @@ function mostrarCarrito() {
     divCarrito.append(totalCompra)
 
     let botonBorrar = document.getElementsByClassName("botonBorrar")
-    // console.log(botonBorrar)
+   
 
     for (botonX of botonBorrar) {
         botonX.addEventListener("click", eliminarProducto)
@@ -110,7 +82,7 @@ function mostrarCarrito() {
     divCarrito.append(terminarCompra)
 
     terminarCompra.addEventListener("click", ()=>{
-        window.location.href="comprar.html"
+        window.location.href="contacto.html"
     })
 }
 
