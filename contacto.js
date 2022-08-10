@@ -6,7 +6,7 @@ const inputNombres = document.querySelector("#nombre")
 const inputEmail = document.querySelector("#email")
 const inputMensaje = document.querySelector("#mensaje")
 
-console.log(formulario2, inputNombres, inputEmail, inputMensaje)
+
 
 
 const clientes = []

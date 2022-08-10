@@ -31,7 +31,7 @@ function agregarAlCarrito(e) {
     //console.log(idBoton)
     let productoSeleccionado = products.find(producto => producto.id === idBoton)
     carrito.push(productoSeleccionado)
-    console.log(carrito)
+    
 
     //storage
     localStorage.setItem("carrito", JSON.stringify(carrito));
