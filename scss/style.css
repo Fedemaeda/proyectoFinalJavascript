@@ -107,7 +107,16 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      
+  justify-content: center;
+  align-items: center;
 }
+
+#carrito {
+  justify-content: center;
+align-items: center;
+}
+
 
 #carritoSection .tituloCarrito {
   text-align: center;

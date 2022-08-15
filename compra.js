@@ -16,8 +16,8 @@
 
  
 
-// el carrito tiene productos ? si tiene, mostrarlos : si no tiene mostrar mensaje
-carrito2.length ? productosCarrito() : (detalle.innerHTML=`<h3>El carrito está vacío <br/> :(</h3>`)
+// Mesaje para carrito vacío
+carrito2.length ? productosCarrito() : (detalle.innerHTML=`<h3>El carrito está vacío</h3>`)
 
 
 //FORMULARIO de compra
