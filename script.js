@@ -100,3 +100,5 @@ function eliminarProducto(e) {
     localStorage.setItem("carrito", JSON.stringify(carrito))
     mostrarCarrito(carrito)
 }
+
+
