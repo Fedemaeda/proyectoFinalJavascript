@@ -1,7 +1,7 @@
 // pokemon
 
 const input = document.querySelector("input");
-const button = document.querySelector(".button");
+const button = document.querySelector(".boton");
 const pokemonContainer = document.querySelector(".pokemon-container");
 
 button.addEventListener('click', (e) => {
@@ -27,10 +27,10 @@ function crearPokemon(pokemon){
     h3.textContent = pokemon.name;
 
     const div = document.createElement("div");
-    div.append(img);
-    div.append(h3);
+    div.appendChild(img);
+    div.appendChild(h3);
 
-    pokemonContainer.append(div);
+    pokemonContainer.appendChild(div);
 
 }
 
