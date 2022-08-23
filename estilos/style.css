@@ -568,6 +568,49 @@ a:focus {
   color: #e53637;
 }
 
+#contenedorclima {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  height: 180px;
+  background: #3494E6;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#EC6EAD), to(#3494E6));
+  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#caja1, #caja2, #caja3 {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 2%;
+  width: 170px;
+  height: 180px;
+}
+
+#caja1 {
+  background-color: rgba(0, 0, 0, 0.767);
+  color: azure;
+}
+
+#caja2 {
+  background-color: darkslateblue;
+  color: azure;
+}
+
+#caja3 {
+  background-color: #2ab2ea;
+  color: azure;
+}
+
 * {
   padding: 0;
   margin: 0;
