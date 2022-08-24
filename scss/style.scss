@@ -223,7 +223,17 @@ $formulario:(
     height: auto;
    }
 
-
+   .checkout {
+      width: 90%;
+      display: grid;
+      grid-template-areas: 1fr;
+      margin-left: 150px;
+      flex-direction: row;
+      
+      gap: 5em;
+      margin-top: 3rem;
+      /* justify-content: space-around; */
+  }
    
    
    

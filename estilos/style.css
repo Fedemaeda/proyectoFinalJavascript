@@ -591,7 +591,7 @@ a:focus {
   display: -ms-grid;
   display: grid;
   text-align: center;
-  padding: 2%;
+  padding: 20px;
   width: 170px;
   height: 180px;
 }
@@ -738,6 +738,20 @@ h1 {
   .video iframe {
     width: auto;
     height: auto;
+  }
+  .checkout {
+    width: 90%;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 1fr;
+    margin-left: 150px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 5em;
+    margin-top: 3rem;
+    /* justify-content: space-around; */
   }
   .nosotras-contenido {
     display: -webkit-box;
