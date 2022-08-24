@@ -269,7 +269,7 @@
 }
 
 .checkout {
-  width: 100%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,7 +284,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  gap: 10em;
+  gap: 5em;
   margin-top: 3em;
   /* justify-content: space-around; */
 }
@@ -339,7 +339,7 @@ form {
 }
 
 #form {
-  width: 150%;
+  width: 90%;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
@@ -756,6 +756,13 @@ h1 {
     gap: 5em;
     margin-top: 3rem;
     /* justify-content: space-around; */
+  }
+  #form {
+    width: 140%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    gap: 2em;
   }
   .nosotras-contenido {
     display: -webkit-box;
