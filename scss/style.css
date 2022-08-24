@@ -338,6 +338,7 @@ form {
   text-transform: uppercase;
   padding: 0.2em;
   color: black;
+  text-justify: auto;
 }
 
 #form #submit {

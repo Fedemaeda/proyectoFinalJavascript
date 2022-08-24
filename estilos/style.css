@@ -269,7 +269,7 @@
 }
 
 .checkout {
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,6 +280,10 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
   gap: 10em;
   margin-top: 3em;
   /* justify-content: space-around; */
@@ -294,7 +298,7 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1em;
-  width: 50%;
+  width: 70%;
 }
 
 #detalle {
@@ -335,7 +339,7 @@ form {
 }
 
 #form {
-  width: 90%;
+  width: 150%;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
